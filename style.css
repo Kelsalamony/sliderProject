@@ -1,0 +1,69 @@
+body{
+    padding: 20px;
+}
+.item {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+}
+
+#itemCaption {
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    padding: 0px 50px;
+    margin: 10px;
+    display: none;
+}
+
+#LightBoxContainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 99999;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#lightBox {
+    position: relative;
+    height: 70vh;
+    width: 600px;
+    background-image: url(images/image-waffle-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#lightBox img {
+    cursor: pointer;
+    margin: 10px;
+}
+
+#closeIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#arrowLeft{
+    opacity: 1;
+    cursor: pointer;
+}
+#arrowRight{
+    opacity: 1;
+    cursor: pointer;
+}
